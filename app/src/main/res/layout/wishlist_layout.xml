@@ -1,0 +1,99 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="100dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/product_image" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_weight="7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:textColor="#000"
+                android:text="Bodyfit Total Gym Kit Combo 20Kg Home Gym,Set"
+                android:id="@+id/product_name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1.5">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9"
+                    android:textStyle="bold"
+                    android:id="@+id/money_test"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000.00"
+                    android:id="@+id/price"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/money_test"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="5dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/montserrat_regular_"
+                    android:background="@drawable/remove_back"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
